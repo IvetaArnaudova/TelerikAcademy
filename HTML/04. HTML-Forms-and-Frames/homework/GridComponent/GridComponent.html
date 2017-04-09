@@ -1,54 +1,65 @@
 <!DOCTYPE html>
+
 <head>
     <title>Grid Component</title>
     <style>
-        a{
+        a {
             color: black;
             display: inline-block;
             padding: 5px 2px;
-            text-decoration: none; 
+            text-decoration: none;
         }
-        a:hover{
+        
+        a:hover {
             border: 1px solid red;
-            border-radius:2px; 
+            border-radius: 2px;
         }
-        body{
+        
+        body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 11px;
         }
-        input[type="image"]{
-            margin-bottom:-6px;
+        
+        input[type="image"] {
+            margin-bottom: -6px;
         }
-       select {
-            -webkit-appearance: none;   
-            background: url('./select.png') no-repeat right center;              
-            background-color: white;              
+        
+        select {
+            -webkit-appearance: none;
+            background: url('./select.png') no-repeat right center;
+            background-color: white;
             border-radius: 4px;
             height: 20px;
             width: 50px;
         }
+        
         table,
         tbody td,
         tr,
-        th{
+        th {
             border: 1px solid #B1B8C2;
             border-collapse: collapse;
         }
+        
         td,
-        th{
+        th {
             padding: 5px;
         }
+        
         thead,
-        tfoot{
+        tfoot {
             background-color: #DCE0E4;
         }
+        
         thead {
             text-align: left;
         }
-        thead th{
+        
+        thead th {
             font-weight: normal;
         }
-        tfoot td:nth-child(3){
+        
+        tfoot td:nth-child(3) {
             text-align: right;
         }
     </style>
@@ -73,44 +84,14 @@
                     <th><input type="text" id="productID" name="ProductID" size="4"></th>
                     <th><input type="text" id="productName" name="ProductName" size="15"></th>
                     <th><input type="text" id="unitPrice" name="UnitPrice" size="10">
-                    <input type="image" src="./button.png"></th>
+                        <input type="image" src="./button.png" alt="Filter button"></th>
                     <th><input type="text" id="quantity" name="Quantity" size="10"></th>
-                    <th><input type="text" id="units" name="Units" size="10"/>
-                    <input type="image" src="./button.png"></th>
-                    <th><input type="checkbox" id="discontinued" name="Discontinued"><input type="image" src="./button.png"></th>
+                    <th><input type="text" id="units" name="Units" size="10" />
+                        <input type="image" src="./button.png" alt="Filter button"></th>
+                    <th><input type="checkbox" id="discontinued" name="Discontinued">
+                        <input type="image" src="./button.png" alt="Filter button"></th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="2">
-                        <input type="image" src="./MoveFirst.png">
-                        <input type="image" src="./MovePrevious.png">
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">7</a>
-                        <a href="#">8</a>
-                        <a href="#">9</a>
-                        <a href="#">10</a>
-                        <a href="#">...</a>
-                        <input type="image" src="./MoveNext.png">
-                        <input type="image" src="./MoveLast.png">
-                    </td>
-                    <td colspan="2">
-                        <label for="pageSize">Page size: </label>
-                        <select name="PageSize" id="pageSize">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                        </select>
-                    </td>
-                    <td colspan="2">335104 items in 33511 pages</td>
-                </tr>
-            </tfoot>
             <tbody>
                 <tr>
                     <td>1</td>
@@ -193,6 +174,37 @@
                     <td><input type="checkbox" name="Discontinued"></td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="image" src="./MoveFirst.png" alt="Move to the first page">
+                        <input type="image" src="./MovePrevious.png" alt="Move to the previous page">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">...</a>
+                        <input type="image" src="./MoveNext.png" alt="Move to the next page">
+                        <input type="image" src="./MoveLast.png" alt="Move to the last page">
+                    </td>
+                    <td colspan="2">
+                        <label for="pageSize">Page size: </label>
+                        <select name="PageSize" id="pageSize">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </td>
+                    <td colspan="2">335104 items in 33511 pages</td>
+                </tr>
+            </tfoot>
         </table>
     </form>
 </body>
