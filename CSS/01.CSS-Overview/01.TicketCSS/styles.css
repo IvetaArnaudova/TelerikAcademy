@@ -4,9 +4,15 @@ section{
     display: inline-block;
     padding: 10px 20px;
 }
-section dl dt {
+section dl dt,
+section table tr th {
     color: white;
     font-style: italic;
+}
+section table tr th{
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
 }
 section h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -24,9 +30,12 @@ section h1{
 .yellow{
     color: yellow;
 }
-.red{
+#red{
     color: red;
 }
 #orange{
     color: orange;
+}
+table tr th,table tr td{
+    padding: 8px;
 }
