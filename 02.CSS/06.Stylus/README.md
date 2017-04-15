@@ -2,7 +2,7 @@ LESS
 ====
 
 ### Problem 1. Forum Post
-*	Implement the following using a preprocessor of your choice - Stylus
+*	Implement the following Stylus
 	*	Use the [HTML](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20LESS/homework/homework.html) code
 	*	Create the Stylus easy to change (backgrounds, fonts)
 	*	Use mixins for clears, gradients)
@@ -11,7 +11,7 @@ LESS
 
 ### Problem 2. Web Gallery
 *	Create a web gallery
-	*	Use only HTML, CSS and a preprocessor of your choice - Stylus
+	*	Use only HTML, CSS and Stylus
 	*	List images
 	*	When a image is selected, show it zoomed
 
