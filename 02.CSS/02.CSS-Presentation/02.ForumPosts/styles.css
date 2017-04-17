@@ -39,7 +39,18 @@ body {
             float: left;
             position: relative;
         }
-
+        @font-face{
+            font-family: Winter Calligraphy;
+            src: url('./Winter Calligraphy.ttf');
+        }
+        body header div#header-container div#logo-container h1 a{
+            font-family: Winter Calligraphy;
+            font-size: 2.5em;
+            font-weight: bold;
+            color:#fff;
+            text-decoration: none;
+            text-shadow: 10px 2px #603382;
+        }
         body header div#header-container div#reg-form-container {
             float: right;
             position: relative;
@@ -58,6 +69,7 @@ body {
 
                 body header div#header-container div#reg-form-container div input {
                     width: 130px;
+                    background-color: rgba(178, 94, 242, 1);
                     border: 1px solid #603382;
                     border-radius: 10px;
                     padding: 2px 5px;
@@ -67,15 +79,15 @@ body {
             body header div#header-container div#reg-form-container button {
                 margin-left: auto;
                 margin-right: auto;
+                color: #fff;
                 font-weight: bold;
-                border: 1px solid #603382;
-                border-style: outset;
+                background-color:rgba(178, 94, 243, 1);
+                border: 2px outset rgba(139, 75, 189, 1);
                 border-radius: 10px;
                 padding: 5px 8px;
             }
 
                 body header div#header-container div#reg-form-container button:hover {
-                    background-color: #8949b9;
                     border-style: inset;
                 }
 
@@ -84,7 +96,9 @@ body {
             width: 75%;
             margin: 20px 20px 20px 20px;
             padding: 12px;
-            border: 2px solid #000;
+            border: 2px solid rgb(71, 11, 118);
+            border-radius: 15px;
+
         }
 
             body header nav ul.nav-list {
@@ -139,7 +153,12 @@ body {
                         color: #fff;
                     }
     body{
-        background-color: #603382;s
+        background: rgba(144, 28, 238,1);
+        background: -webkit-linear-gradient( rgba(210, 145, 253, 1) 0%, rgba(144, 28, 238,1) 20%,rgba(145, 21, 241, 1) 100%);
+        background: -moz-linear-gradient( rgba(210, 145, 253, 1) 0%, rgba(144, 28, 238,1) 20%,rgba(145, 21, 241, 1) 100%);
+        background: -o-linear-gradient( rgba(210, 145, 253, 1) 0%, rgba(144, 28, 238,1) 20%,rgba(145, 21, 241, 1) 100%);
+        background: linear-gradient( rgba(210, 145, 253, 1) 0%, rgba(144, 28, 238,1) 20%,rgba(145, 21, 241, 1) 100%);
+
     }
     body section {
         width: 75%;
@@ -147,10 +166,13 @@ body {
         color: #fff;
     }
 
+
         body section article {
             margin: 20px;
             padding: 20px;
-            border: 1px solid #fff;
+            border: 2px solid rgb(71, 11, 118);
+            border-radius:15px;
+
         }
 
             body section article header {
@@ -178,6 +200,7 @@ body {
                     }
 
                     body section article footer p a {
+                        color:rgba(210, 145, 253, 1);
                         text-decoration: none;
                     }
 
@@ -190,7 +213,7 @@ body {
         width: 20%;
         margin: 20px;
     }
-
+ 
         body aside > ul {
             list-style-type: none;
         }
@@ -198,8 +221,9 @@ body {
             body aside > ul > li {
                 margin: 15px 0;
                 padding: 15px;
-                border: 1px solid black;
                 border-radius: 5px;
+                border: 2px solid rgb(71, 11, 118);
+
             }
 
                 body aside > ul > li h2 {
