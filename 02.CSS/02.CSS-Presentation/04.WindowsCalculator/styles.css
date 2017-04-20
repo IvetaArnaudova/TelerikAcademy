@@ -33,34 +33,61 @@ body section form{
     background: -moz-linear-gradient(#fff,#d2d9ec);
     background: -o-linear-gradient(#fff,#d2d9ec);
     background: linear-gradient(#fff,#d2d9ec);
+    padding-bottom: 0.5rem;
 }
 body section div>ul>li{
     list-style-type: none;
 }
-.numbers,.radio{
+.all-numbers,.radio,.binary ul li{
     display: inline-block;
 }
 input[type="button"]{
     height: 1.5rem;
     width: 2rem;
-    margin: 0 0.25rem 0.25rem 0;
+    margin: 0.2rem;
     background: -webkit-linear-gradient(#eff5fb 50%,#e3eaf3 50%);
     background: -moz-linear-gradient(#eff5fb 50%,#e3eaf3 50%);
     background: -o-linear-gradient(#eff5fb 50%,#e3eaf3 50%);
     background: linear-gradient(#eff5fb 50%,#e3eaf3 50%);
 }
-.numbers input,.symbols .radio li,.binary p a{
+.numbers input,.symbols .radio li,.binary ul li a{
         color: #465da9;
 }
-input[type="button"]:hover{
+input[type="button"]:hover,input[type="button"].digit:hover{
+    background: -webkit-linear-gradient(#fdebf6 50%,#fbdc80 50%);
+    background: -moz-linear-gradient(#fdebf6 50%,#fbdc80 50%);
+    background: -o-linear-gradient(#fdebf6 50%,#fbdc80 50%);
+    background: linear-gradient(#fdebf6 50%,#fbdc80 50%);
 }
-input[type="button"]:disabled{
-    background-color: transparent;
+input[type="button"].digit{
+    background: -webkit-linear-gradient(#fff 50%,#e9f1fc 50%);
+    background: -moz-linear-gradient(#fff 50%,#e9f1fc 50%);
+    background: -o-linear-gradient(#fff 50%,#e9f1fc 50%);
+    background: linear-gradient(#fff 50%,#e9f1fc 50%);
 }
-input#equal{
+input[type="button"]:enabled:hover,input[type="button"].digit:hover{
+        border-color:  #f8e168;
+        box-shadow: 3px 3px 20px #f8e168;
+}
+input[type="button"]:disabled,input[type="button"].memory{
+    background:transparent;
+}
+input[type="button"].memory:hover{
+    background: #fbdc80;
+    border-color:  #f8e168;
+}
+input[type="button"]:enabled:focus{
+    background: #fbdc80;
+    border: 1px solid  #c6b453;
+    box-shadow: none;
+    outline: none;
+}
+#equal{
     float:right;
+    height: 3.35rem;
 }
-input#zero{
+#zero{
+    width:4.6rem;
 }
 input[value="none"]{
     color:transparent;
@@ -75,31 +102,42 @@ input[type="text"]{
     background: linear-gradient(#e9f1fc,#fff);
     font-size: 1.5rem;
 }
-input[type="text"],.binary{        
+input[type="text"]{        
     padding: 0 0.25rem;
 }
-input[type="text"],.binary,.symbols{
+input[type="text"]{
     width:25rem;
 }
-input[type="text"],.binary p,.binary p a{
+input[type="text"],.binary ul li,.binary ul li a{
     font-family: 'Consolas',sans-serif;
 }
 .binary{
-    margin: 0 0.75rem;
+    margin: 0 0.9rem 0.25rem 0.75rem;
 }
-.binary p{
-    text-align: justify;
-}
-.binary p a{
+.binary ul li a{
+    margin:0 0.65rem;
     text-decoration:none;
 }
+.binary ul:nth-child(even) li{
+    color: #7f8384;
+}
+.left{
+    margin:0 11.5rem 0 0.7rem;
+}
+.right{
+    float:right;
+    margin-right: 1.1rem;
+}
 .symbols{
-    margin:0.25rem 0.75rem 0rem;
+    margin:0 0.75rem;
 }
 .radio{
     width:4rem;
-    padding:0.25rem;
+    margin:0.2rem 0.2rem 0.2rem 0;
+    padding:0 0.3rem;
 }
-
+.radio li{
+    padding: 0.15rem;
+}
 
 

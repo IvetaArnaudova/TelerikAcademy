@@ -20,30 +20,36 @@
             <form>
                 <input type="text" name="Output" id="output" value="0">
                 <div class="binary">
-                    <p>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                    </p>
-                    <p>
-                        63  47  32
-                    </p>
-                    <p>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                        <a href="#">0000</a>
-                    </p>
-                    <p> 31  15  0</p>
+                    <ul>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                    </ul>
+                    <ul>
+                        <li class="left">63</li>
+                        <li>47</li>
+                        <li class="right">32</li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                        <li><a href="#">0000</a></li>
+                    </ul>
+                    <ul>
+                        <li class="left">31</li>
+                        <li>15</li>
+                        <li class="right">0</li>
+                    </ul>
                 </div>
                 <div class="symbols">
                     <ul class="radio">
@@ -52,18 +58,18 @@
                         <li> <input type="radio" name="Numeral System" value="Octal">Oct</li>
                         <li><input type="radio" name="Numeral System" value="Binary">Bin</li>
                     </ul>
-                    <div class="numbers">
-                        <div>
+                    <div class="all-numbers">
+                        <div class="numbers">
                             <input type="button" value="none" disabled>
                             <input type="button" value="Mod">
                             <input type="button" value="A" disabled>
-                            <input type="button" value="MC">
-                            <input type="button" value="MR">
-                            <input type="button" value="MS">
-                            <input type="button" value="M+">
-                            <input type="button" value="M-">
+                            <input type="button" value="MC" class="memory">
+                            <input type="button" value="MR" class="memory">
+                            <input type="button" value="MS" class="memory">
+                            <input type="button" value="M+" class="memory">
+                            <input type="button" value="M-" class="memory">
                         </div>
-                        <div>
+                        <div class="numbers">
                             <input type="button" value="(">
                             <input type="button" value=")">
                             <input type="button" value="B" disabled>
@@ -73,7 +79,7 @@
                             <input type="button" value="&#177;">
                             <input type="button" value="&#8730;" disabled>
                         </div>
-                        <div>
+                        <div class="numbers">
                             <input type="button" value="Rol">
                             <input type="button" value="RoR">
                             <input type="button" value="C" disabled>
@@ -92,8 +98,8 @@
                         <li><input type="radio" name="Size" value="Word">Word</li>
                         <li><input type="radio" name="Size" value="Byte">Byte</li>
                     </ul>
-                    <div class="numbers">
-                        <div>
+                    <div class="all-numbers">
+                        <div class="numbers">
                             <input type="button" value="Or">
                             <input type="button" value="Xor">
                             <input type="button" value="D" disabled>
@@ -103,7 +109,7 @@
                             <input type="button" value="*">
                             <input type="button" value="1/x" disabled>
                         </div>
-                        <div>
+                        <div class="numbers">
                             <input type="button" value="Lsh">
                             <input type="button" value="Rsh">
                             <input type="button" value="E" disabled>
@@ -113,7 +119,7 @@
                             <input type="button" value="-">
                             <input type="button" value="=" id="equal">
                         </div>
-                        <div>
+                        <div class="numbers">
                             <input type="button" value="Not">
                             <input type="button" value="And">
                             <input type="button" value="F" disabled>
