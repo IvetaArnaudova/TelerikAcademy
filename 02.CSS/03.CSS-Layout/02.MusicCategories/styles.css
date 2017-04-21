@@ -1,0 +1,41 @@
+body,section,article,div,h2,h3,img,input{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size:14px;
+}
+section{
+    background-color: gray;
+    border-radius:5px;
+    width:40%;
+    margin:1%;
+}
+section h2{
+    font-weight: normal;
+    padding:1%
+}
+section article{
+    positon:relative;
+    background-color: #fff;
+    border:1px solid #000;
+    margin:6% 2%;
+}
+h3{
+    display: none;
+}
+img{
+    width:30%;
+    margin:2%;
+}
+article div{
+    width:60%;
+    margin:2%;
+    display:inline-block;
+    float:right;
+}
+input[value="Add"]{
+    position:relative;
+    right:4%
+}
