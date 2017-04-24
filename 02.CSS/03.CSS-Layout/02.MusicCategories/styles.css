@@ -7,7 +7,7 @@ body{
     font-size:14px;
 }
 section{
-    background-color: gray;
+    background-color: #d6d6d6;
     border-radius:5px;
     width:40%;
     margin:1%;
@@ -17,7 +17,6 @@ section h2{
     padding:1%
 }
 section article{
-    positon:relative;
     background-color: #fff;
     border:1px solid #000;
     margin:6% 2%;
@@ -26,16 +25,25 @@ h3{
     display: none;
 }
 img{
+    display:inline-block;
     width:30%;
-    margin:2%;
+    margin:3%;
 }
 article div{
-    width:60%;
-    margin:2%;
+    position:relative;
     display:inline-block;
     float:right;
+    width:58%;
+    height:8.5em;
+    margin:3%;
 }
 input[value="Add"]{
-    position:relative;
-    right:4%
-}
+    position:absolute;
+    bottom:0;
+    right:0;
+    }
+   input[value="Listen"]{
+    position:absolute;
+    bottom:0;
+    right:25%;
+    }
