@@ -52,6 +52,9 @@ input[type="button"]{
     text-align:left;
     padding:0.5% 0 0 5% ;
 }
+.button:hover{
+    cursor:pointer;
+}
 .button>div{
     color:#fff;
     position: absolute;
