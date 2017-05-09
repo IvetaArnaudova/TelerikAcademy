@@ -4,8 +4,6 @@ body,section,h2,p,span,a{
 }
 body{
     width:50%;
-    border:1px solid black;
-    border-radius:5px;
     margin:5px 10px; 
     font-size: 16px;
     font-size: 100%;
@@ -13,15 +11,16 @@ body{
 section h2{
     text-transform:lowercase;
 }
-.members-login div,.members-login h2,.members-login form{
-    display: inline-block;
-}
 .members-login{
     background:-webkit-linear-gradient(#3b3b3b 80%,#252525);
     background:-moz-linear-gradient(#3b3b3b 80%,#252525);
     background:-o-linear-gradient(#3b3b3b 80%,#252525);
-    background:linear-gradient(#3b3b3b 80%,#252525);    
+    background:linear-gradient(#3b3b3b 80%,#252525);
+    border-radius:5px 5px 0 0;     
     }
+.members-login div,.members-login h2,.members-login form{
+    display: inline-block;
+}
 .members-login div{
     width:3em;
     height:3em;
@@ -56,6 +55,7 @@ section h2{
 }
 .content{
     background-color:#3b3b3b;
+    border-radius:0 0 5px 5px;
     color:#b3b3b3;
     padding:0 3em 0.5em 1em;
 }
