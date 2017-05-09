@@ -1,0 +1,75 @@
+body,section,h2,p,span,a{
+    margin:0;
+    padding:0;
+}
+body{
+    width:50%;
+    border:1px solid black;
+    border-radius:5px;
+    margin:5px 10px; 
+    font-size: 16px;
+    font-size: 100%;
+}
+section h2{
+    text-transform:lowercase;
+}
+.members-login div,.members-login h2,.members-login form{
+    display: inline-block;
+}
+.members-login{
+    background:-webkit-linear-gradient(#3b3b3b 80%,#252525);
+    background:-moz-linear-gradient(#3b3b3b 80%,#252525);
+    background:-o-linear-gradient(#3b3b3b 80%,#252525);
+    background:linear-gradient(#3b3b3b 80%,#252525);    
+    }
+.members-login div{
+    width:3em;
+    height:3em;
+    margin:0.5em 0.75em;
+    background-image: url("./images/monitor.png");
+    background-size:cover;
+    vertical-align:middle;
+}
+.members-login h2{
+    font-size:1.2em;
+    color:#fff;
+    margin:0 0.7em;
+}
+.members-login form input{
+    margin:0 0.9em;
+}
+.members-login input[type="text"],.members-login input[type="email"]{
+    padding:0 0 0.25em 0.5em;
+    width:10em;
+}
+.members-login input[type="submit"]{
+    width:5em;
+    background-image:url('./images/red-button.png');
+    background-size:100% 105%;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    border-radius:0.9em;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+    padding:0.35em;
+}
+.content{
+    background-color:#3b3b3b;
+    color:#b3b3b3;
+    padding:0 3em 0.5em 1em;
+}
+.content h2{
+    padding:1em 0;
+    color:yellow;
+}
+.content p{
+    text-align:left;
+}
+.content p span{
+    color:#fff;
+}
+.content p a{
+    text-decoration:none;
+    color:inherit;
+}

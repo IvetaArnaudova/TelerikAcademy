@@ -1,0 +1,55 @@
+body,section,div,h2,p,input{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size:100%;
+}
+section{
+    width:70%;
+    margin:2% 5%;
+    border:1px solid #000;
+    border-radius:5px;
+}
+h2{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    border-bottom:1px solid #000;
+    padding:1%;
+}
+.form-holder>div{
+    width:100%;
+}
+.range-holder,.form-holder,fieldset{
+    display:inline-block;
+}
+.form-holder{
+   border:1px solid #000;
+   margin:1%;
+   width:68%%;
+}
+fieldset{
+    width:42.5%;
+    margin:1% 1.75%;
+}
+fieldset legend{
+    text-align:center;
+}
+
+.range-holder>div input{
+    width:100%;
+}
+.left,.right{
+    display:inline-block;
+    width:49%;
+}
+.left>img{
+    width:100%;
+    height:auto;
+}
+fieldset p{
+    font-size:1.5em;
+    margin-top:15%;
+    text-align:center;
+}
