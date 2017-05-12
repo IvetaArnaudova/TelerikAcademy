@@ -1,23 +1,80 @@
-body,aside,section,div,ul,li,p,a,img{
+body,aside,section,article,div,ul,li,p,a,img{
     margin:0;
     padding:0;
 }
 body{
-    font-size:16px;
+    font-size:13px;
+    font-family:Verdana,sans-serif;
 }
 aside,section{
     float:left;
 }
 aside{
-    width:10%;
+    width:12%;
     box-sizing:border-box;
 }
+aside.left{
+    padding-left:0.5%;
+}
 section{
-    width:78%;
-    margin:1%;
+    width:73.5%;
+    margin:0.5% 1%;
     box-sizing:border-box;
+    border:1px solid grey;
+    padding:0.75%;
+}
+aside.left h3{
+    text-transform:uppercase;
+}
+aside.left h3::before{
+    content:url("./images/home.png");
+    vertical-align:text-bottom;
+    margin-right:2%;
 }
 aside.left>ul>li{
     color:red;
-    margin-top:1em;
+    font-weight:bold;
+    margin-top:15%;
+}
+ul li{
+    list-style-type:none;
+}
+ul li a{
+    text-decoration:none;
+    color:#000;
+    font-weight:normal;
+}
+section article h3,.right div h3{
+    background-color:grey;
+    color:#fff;
+}
+.right div{
+    margin-bottom:1%;
+    border:1px solid grey;
+    text-align:center;
+}
+.right div h3{
+    margin:0;
+    text-transform:uppercase;
+}
+.right{
+    margin:0.5% 0.5% 0 0;
+}
+input{
+    margin:3% 0;
+}
+input[type="text"]{
+    width:70%;
+}
+section div{
+    border-bottom:2px solid grey;
+}
+section div:last-of-type{
+    border-top:2px solid grey;
+}
+img{
+    float:left;
+}
+article{
+    clear:left;
 }
