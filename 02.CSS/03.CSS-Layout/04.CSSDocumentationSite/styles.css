@@ -35,7 +35,7 @@ aside.left h3::before{
 }
 aside.left>ul>li{
     margin-top:10%;
-    color:#ff0000;
+    color:#8a0000;
     font-weight:bold;
 }
 ul li{
@@ -103,7 +103,7 @@ article{
 }
 article a,.right div a{
     display:block;
-    color:#ff0000;
+    color:#a23231;
 }
 article a{
     margin:1% 0;
