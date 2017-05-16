@@ -105,6 +105,9 @@ article a,.right div a{
     display:block;
     color:#ff0000;
 }
+article a{
+    margin:1% 0;
+}
 .right{
     margin:0.5% 0.5% 0 0;
 }
@@ -135,4 +138,7 @@ input[type="text"]{
     background:-o-linear-gradient(right,#a8dcf9 5%,#c0f6fa 15%,#c0f6fa 85%,#a8dcf9 95%);
     background:linear-gradient(to right,#a8dcf9 5%,#c0f6fa 15%,#c0f6fa 85%,#a8dcf9 95%);
     color:#27c8fe;
+}
+.right div div:hover{
+    cursor:pointer;
 }
