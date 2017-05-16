@@ -3,38 +3,40 @@ body,aside,section,article,div,ul,li,p,a,img{
     padding:0;
 }
 body{
+    background-color:#ebebe0;
     font-size:13px;
-    font-family:Verdana,sans-serif;
+    font-family:"Segoe UI",Arial,sans-serif;
 }
-aside,section{
+aside,section,img{
     float:left;
 }
 aside{
-    width:12%;
     box-sizing:border-box;
+    width:12%;
 }
 aside.left{
     padding-left:0.5%;
 }
 section{
-    width:73.5%;
-    margin:0.5% 1%;
     box-sizing:border-box;
-    border:1px solid grey;
+    width:74%;
+    margin:0.5% 0.5%;
     padding:0.75%;
+    border:1px solid #808080;
+    background-color:#fff;
 }
 aside.left h3{
     text-transform:uppercase;
 }
 aside.left h3::before{
     content:url("./images/home.png");
-    vertical-align:text-bottom;
+    vertical-align:-1.5px;
     margin-right:2%;
 }
 aside.left>ul>li{
-    color:red;
+    margin-top:10%;
+    color:#ff0000;
     font-weight:bold;
-    margin-top:15%;
 }
 ul li{
     list-style-type:none;
@@ -45,20 +47,78 @@ ul li a{
     font-weight:normal;
 }
 section article h3,.right div h3{
-    background-color:grey;
+    background-color:#808080;
     color:#fff;
+}
+article:first-of-type p{
+    margin:1%;
+    font-weight:bold;
+}
+.prev-next{
+    border-bottom:2px solid #808080;
+}
+.prev-next:last-child{
+    border-top:2px solid #808080;
+    margin:2% 0 4%;
+}
+.prev,.next{
+    position:relative;
+    display:inline-block;
+    width:15%;
+    border:1px solid #000;
+    margin:1% 1% 1% 0;
+    padding:0.5% 0;
+    color:#000;
+    text-align:center;
+    text-decoration:none;
+}
+.prev:hover,.next:hover{
+    box-shadow:3px 3px 5px #808080;
+}
+.prev::before{
+    content:" ";
+    position:absolute;
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+}
+.next::after{
+    content:" ";
+    position:absolute;
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #000;
+}
+img{
+    margin-right:2%;
+}
+article{
+    clear:left;
+}
+article a,.right div a{
+    display:block;
+    color:#ff0000;
+}
+.right{
+    margin:0.5% 0.5% 0 0;
 }
 .right div{
     margin-bottom:1%;
-    border:1px solid grey;
+    padding:3% 0;
+    border:1px solid #808080;
+    background-color:#fff;
     text-align:center;
 }
 .right div h3{
     margin:0;
     text-transform:uppercase;
-}
-.right{
-    margin:0.5% 0.5% 0 0;
+    font-weight:500;
 }
 input{
     margin:3% 0;
@@ -66,15 +126,13 @@ input{
 input[type="text"]{
     width:70%;
 }
-section div{
-    border-bottom:2px solid grey;
-}
-section div:last-of-type{
-    border-top:2px solid grey;
-}
-img{
-    float:left;
-}
-article{
-    clear:left;
+.right div div{
+    width:70%;
+    margin:auto;
+    border-color:#7ca9ca;
+    background:-webkit-linear-gradient(left,#a8dcf9 5%,#c0f6fa 15%,#c0f6fa 85%,#a8dcf9 95%);
+    background:-moz-linear-gradient(right,#a8dcf9 5%,#c0f6fa 15%,#c0f6fa 85%,#a8dcf9 95%);
+    background:-o-linear-gradient(right,#a8dcf9 5%,#c0f6fa 15%,#c0f6fa 85%,#a8dcf9 95%);
+    background:linear-gradient(to right,#a8dcf9 5%,#c0f6fa 15%,#c0f6fa 85%,#a8dcf9 95%);
+    color:#27c8fe;
 }
