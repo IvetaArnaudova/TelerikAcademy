@@ -1,57 +1,92 @@
-body,section,div,h2,p,input{
+body,section,div,h2,p,input,fieldset{
     margin: 0;
     padding: 0;
 }
+@font-face{
+    font-family: 'Merriweather Sans';
+    src: url(MerriweatherSans-Regular.ttf);
+}
 body{
     font-size:100%;
+    font-family: 'Merriweather Sans',sans-serif;
 }
 section{
+    position:relative;
+    box-sizing:border-box;
     width:70%;
-    margin:2% 5%;
+    margin:2em auto;
     border:1px solid #000;
-    border-radius:5px;
 }
-h2{
+section h2{
     width:90%;
     margin:auto;
-    text-align:center;
-    border-bottom:1px solid #000;
     padding:1%;
+    border-bottom:1px solid #000;
+    text-align:center;
 }
-.form-holder>div{
-    width:100%;
-}
-.range-holder,.form-holder,fieldset{
-    display:inline-block;
-}
-.form-holder{
-   border:1px solid #000;
-   margin:1%;
-   width:68%%;
-   vertical-align:middle;
+form{
+    box-sizing:border-box;
+    width:70%;
+    margin:2% 0 2% 2%;
+    border:1px solid #000;
 }
 fieldset{
-    width:42.5%;
-    margin:1% 1.75%;
-    border-color:#000;
+    box-sizing:border-box;
+    width:48.1%;
+    margin:1%;
+    padding:0 0 1%;
+}
+form>div{
+    width:100%;
+}
+div fieldset{
+    display:inline-block;
+    border:1px solid #000;
+}
+div fieldset:nth-child(2){
+    margin-left:0;
 }
 fieldset legend{
     text-align:center;
-    font-size:1.5em;
-}
-.range-holder>div input{
-    width:100%;
+    font-size:1.25em;
 }
 .left,.right{
     display:inline-block;
+    box-sizing:border-box;
     width:49%;
+    text-align:center;
 }
 .left>img{
-    width:100%;
+    width:70%;
     height:auto;
+    vertical-align:text-bottom;
 }
 fieldset p{
-    font-size:1.5em;
-    margin-top:15%;
     text-align:center;
+    font-size:1.25em;
+    line-height:2.5em;
+}
+.range-holder{
+    position:absolute;
+    top:20%;
+    right:0;
+    box-sizing:border-box;
+    width:26%;
+}
+.range-holder div{
+    font-size:1.25rem;
+    line-height:2.5rem;
+}
+.range-holder input{
+    display:block;
+    width:80%;
+    margin:4%;
+}
+.range-holder div:nth-child(1) span,
+.range-holder div:nth-child(3) span{
+    margin-right:15%;
+}
+.range-holder div:nth-child(5) span,
+.range-holder div:nth-child(7) span{
+    margin-right:20%;
 }
